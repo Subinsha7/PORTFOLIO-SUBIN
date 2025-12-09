@@ -5,7 +5,7 @@ import { DragOrderList } from "../lightswind/DragOrderList";
 import { motion } from "framer-motion";
 import TORSHA from "../../assets/img/TORSHA.png";
 import GUIDZI from "../../assets/img/GUIDZI.png";
-import INVENTORY from "../../assets/img/INVENTORY.png";
+import INVENTORY from "../../assets/img/inventory.png";
 
 export const ProjectsSection = () => {
   const [projects] = useState([
