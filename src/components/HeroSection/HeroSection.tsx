@@ -1,6 +1,8 @@
+
 import { Badge } from "../lightswind/badge";
 import { motion } from "framer-motion";
 import { Linkedin, Github, Instagram } from "lucide-react";
+import PROFILE_IMG from "../../assets/img/image1.JPG";
 
 export const HeroSection = () => {
   return (
@@ -105,7 +107,7 @@ export const HeroSection = () => {
           }}
         >
           <motion.a
-            href="https://www.linkedin.com/"
+            href="www.linkedin.com/in/subin-t-s-pzr"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-pink-500 transition-colors"
@@ -115,7 +117,7 @@ export const HeroSection = () => {
             <Linkedin size={24} />
           </motion.a>
           <motion.a
-            href="https://github.com/"
+            href="https://github.com/Subinsha7"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-pink-500 transition-colors"
@@ -125,7 +127,7 @@ export const HeroSection = () => {
             <Github size={24} />
           </motion.a>
           <motion.a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/_subin_sha7_?igsh=MzJpZ2V6ZnNyMTRr"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-pink-500 transition-colors"
@@ -150,7 +152,7 @@ export const HeroSection = () => {
       >
         <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
           <img
-            src="/src/assets/img/image1.JPG"
+            src={PROFILE_IMG}
             alt="SUBIN TS"
             className="w-full h-full object-cover blur-[0.3px]"
           />
