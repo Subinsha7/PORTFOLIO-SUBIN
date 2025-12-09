@@ -1,4 +1,4 @@
-```javascript
+
 import { Badge } from "../lightswind/badge";
 import { motion } from "framer-motion";
 import { Linkedin, Github, Instagram } from "lucide-react";
