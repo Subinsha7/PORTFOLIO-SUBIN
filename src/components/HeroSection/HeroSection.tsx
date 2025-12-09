@@ -107,7 +107,7 @@ export const HeroSection = () => {
           }}
         >
           <motion.a
-            href="www.linkedin.com/in/subin-t-s-pzr"
+            href="https://www.linkedin.com/in/subin-t-s-pzr"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-pink-500 transition-colors"
