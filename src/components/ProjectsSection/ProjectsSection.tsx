@@ -17,7 +17,7 @@ export const ProjectsSection = () => {
         "TORSHA is a complete automotive ecosystem offering garage services, vehicle rentals, and a marketplace to buy or sell cars. A single platform to manage bookings, explore garages, and handle all automotive needs.",
       date: "",
       githubLink: "https://github.com/Subinsha7/TORSHA-The_Automotive_Hub",
-      liveLink: "", // Assuming a common vercel deployment pattern or placeholder
+      liveLink: "", // Deployment link placeholder
       image: TORSHA,
     },
     {
