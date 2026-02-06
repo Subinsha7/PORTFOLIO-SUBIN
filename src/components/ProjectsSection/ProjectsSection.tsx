@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import TORSHA from "../../assets/img/TORSHA.png";
 import GUIDZI from "../../assets/img/GUIDZI.png";
 import INVENTORY from "../../assets/img/inventory.png";
+import JUIZA from "../../assets/img/JUIZA.png";
 
 export const ProjectsSection = () => {
   const [projects] = useState([
@@ -15,7 +16,8 @@ export const ProjectsSection = () => {
       subtitle:
         "TORSHA is a complete automotive ecosystem offering garage services, vehicle rentals, and a marketplace to buy or sell cars. A single platform to manage bookings, explore garages, and handle all automotive needs.",
       date: "",
-      link: "https://github.com/Subinsha7/TORSHA-The_Automotive_Hub",
+      githubLink: "https://github.com/Subinsha7/TORSHA-The_Automotive_Hub",
+      liveLink: "", // Assuming a common vercel deployment pattern or placeholder
       image: TORSHA,
     },
     {
@@ -24,8 +26,19 @@ export const ProjectsSection = () => {
       subtitle:
         "The Placement Guidance System is a comprehensive web platform designed to assist college students in their placement journey.",
       date: "",
-      link: "https://github.com/Subinsha7/Guidzi-AI_College_Placement_Guidance_System",
+      githubLink: "https://github.com/Subinsha7/Guidzi-AI_College_Placement_Guidance_System",
+      liveLink: "",
       image: GUIDZI,
+    },
+    {
+      id: 4,
+      title: "JUIZA",
+      subtitle:
+        "🍹 JUIZA - Modern fresh juice e-commerce SPA built with React 19, Vite, Tailwind CSS & Framer Motion. Features: dynamic product catalog, real-time cart with Context API, smooth animations & responsive design. Full-stack shopping experience with checkout flow.",
+      date: "",
+      githubLink: "https://github.com/Subinsha7/JUIZA",
+      liveLink: "https://juiza.netlify.app", // Added live link
+      image: JUIZA,
     },
     {
       id: 3,
@@ -33,9 +46,11 @@ export const ProjectsSection = () => {
       subtitle:
         "The Inventory Management System is a Django-based web app that enables staff to manage products, track stock, and record sales and purchases with secure login and user-friendly interfaces.",
       date: "",
-      link: "https://github.com/Subinsha7/LOCALSHOP-INVENTORY",
+      githubLink: "https://github.com/Subinsha7/LOCALSHOP-INVENTORY",
+      liveLink: "", // Empty or placeholder if not available
       image: INVENTORY,
     },
+
 
   ]);
 

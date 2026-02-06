@@ -10,7 +10,7 @@ import {
   DragControls,
   MotionValue,
 } from "framer-motion";
-import { GripVertical } from "lucide-react";
+import { GripVertical, Github, ExternalLink } from "lucide-react";
 
 export interface DragItem {
   id: number;
@@ -18,7 +18,9 @@ export interface DragItem {
   subtitle: string;
   image: string;
   date: string;
-  link?: string;
+  link?: string; // Legacy field
+  githubLink?: string;
+  liveLink?: string;
 }
 
 interface DragOrderListProps {
@@ -78,17 +80,35 @@ function DragOrderItem({ item }: { item: DragItem }) {
           src={item.image}
           alt={item.title}
           className="w-36 h-24 object-cover rounded-md mt-2 border border-border"
-        />        
-        {item.link && (
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 inline-block text-xs text-blue-500 hover:underline"
-          >
-            More Info
-          </a>
-        )}
+        />
+        <div className="flex flex-wrap gap-2 mt-3">
+          {(item.githubLink || item.link) && (
+            <a
+              href={item.githubLink || item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium 
+              bg-secondary hover:bg-secondary/80 text-secondary-foreground 
+              rounded-lg transition-colors border border-border"
+            >
+              <Github size={14} />
+              GitHub
+            </a>
+          )}
+          {item.liveLink && (
+            <a
+              href={item.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium 
+              bg-primary text-primary-foreground hover:bg-primary/90 
+              rounded-lg transition-colors shadow-sm"
+            >
+              <ExternalLink size={14} />
+              Live Demo
+            </a>
+          )}
+        </div>
       </div>
       <ReorderHandle dragControls={dragControls} />
     </Reorder.Item>
